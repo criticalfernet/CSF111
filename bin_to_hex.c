@@ -1,14 +1,24 @@
 #include <stdio.h>
-#include "math.h"
+#include <math.h>
+
+
+int findSum(int d1, int d2, int d3, int d4){
+	return d1*(int)pow(2,0)+d2*(int)pow(2,1)+d3*(int)pow(2,2)+d4*(int)pow(2,3);
+}
 
 char parse(int d1, int d2, int d3, int d4) { 
 	//return '0';
-	int sum = d1*(int)pow(2,0)+d2*(int)pow(2,1)+d3*(int)pow(2,2)+d4*(int)pow(2,3);
-
+	int sum = findSum(d1,d2,d3,d4);
 	if (sum<10) {
 		return sum+48;
 	} else {
 		return sum+55;
+	}
+}
+
+void print_array(char array[],int len){
+	for(int k=len-1;k>=0;k--){
+		printf("%c",array[k]);
 	}
 }
 
@@ -35,9 +45,7 @@ void binary_to_hex(int len_of_bin) {
 		hex_array[j/4] = out;
 	}
 
-	for(int k=reduced-1;k>=0;k--){
-		printf("%c",hex_array[k]);
-	}
+	print_array(hex_array,reduced);
 
   printf("\n");
 }

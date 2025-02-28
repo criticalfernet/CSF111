@@ -1,3 +1,3 @@
-# About
+# Computer Class Practice Questions
 
-Questions done in Course CS-F111
+This repository contains a collection of practice questions and exercises completed during computer class.
