@@ -1,3 +1,3 @@
 # About
 
-Questions done in Course CP-F111
+Questions done in Course CS-F111
