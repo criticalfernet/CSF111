@@ -155,7 +155,6 @@ int find_mode(int *arr, int length) {
   int max = 0;
 
   for (int i = 0; i < length; i++) {
-    int element = *(arr + i);
     int counter = 0;
     for (int j = i; j < length; j++) {
 
